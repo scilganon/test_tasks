@@ -1,0 +1,24 @@
+{
+  "presets": [
+    ["react"],
+    ["env", {
+      "targets": {
+        "browsers": ["Chrome > 74", "Firefox > 66"]
+      },
+      "debug": true,
+      "modules": false,
+      "loose": true,
+      "include": [
+        "transform-es2015-shorthand-properties",
+        "transform-es2015-spread"
+      ],
+      "plugins": [
+        "@babel/plugin-transform-runtime",
+        "plugin-transform-spread",
+        "transform-object-rest-spread",
+        "@babel/plugin-proposal-object-rest-spread"
+      ]
+    }]
+  ],
+  "plugins": ["transform-object-rest-spread"]
+}
